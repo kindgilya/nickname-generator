@@ -1,0 +1,80 @@
+// 7fbf4d окно
+
+// 337931 обводка на ховер
+
+// f1f2ec фон
+
+// 585856  шрифты и обводка конпки
+
+.nickname-form {
+    background: linear-gradient(to bottom,
+    #7fbf4d 5%,
+    #7fbf4d 8%,
+    #f1f2ec 15% );
+    // .nickname-form__header
+
+    &__header {
+        padding: 3px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .nickname-form__collapse
+
+    &__collapse {
+        cursor: not-allowed;
+        margin-right: 5px;
+    }
+
+    // .nickname-form__wpapper
+
+    &__wpapper {
+        margin-top: 100px;
+    }
+
+    // .nickname-form__icon
+
+    &__icon {
+    }
+
+    // .nickname-form__container
+
+    &__container {
+    }
+
+    // .nickname-form__result-title
+
+    &__result-title {
+    }
+
+    // .nickname-form__result
+
+    &__result {
+    }
+
+    // .nickname-form__footer
+
+    &__footer {
+    }
+}
+
+// .icq__logo
+.icq-logo {
+    width: 30px;
+    height: auto;
+    object-fit: contain;
+    }
+
+.icq-icon {
+    
+}
+
+.input-group {
+}
+
+.btn {
+}
+
+.btn-generate {
+}
