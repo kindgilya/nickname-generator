@@ -16,22 +16,23 @@ const NicknameForm = () => {
             <div className={cn(styles["nickname-form__icon"])}>
             <img className={cn(styles["icq-icon"])} src="../public/images/ICQ_icon.png" alt="ICQ_icon" />  
             </div>
+
             <div className={cn(styles["input-group"])}>
-                <label htmlFor="name">Ваше имя</label>
-                <input type="text" id="name" placeholder="Введите ваше имя"></input>
+                <label className={cn(styles["input-group__title"])} htmlFor="name">Ваше имя</label>
+                <input className={cn(styles["input-group__write"])} type="text" id="name" placeholder="Введите ваше имя"></input>
             </div>
 
-            <button className={cn(styles["btn btn-generate"])} >Сгенерировать ник</button>
+            <button className={cn(styles.btn, styles["btn-generate"])} >Сгенерировать ник</button>
             
             <div className={cn(styles["nickname-form__container"])}>
                 <h3 className={cn(styles["nickname-form__result-title"])}>Ваш новый ник:</h3>
                 <span className={cn(styles["nickname-form__result"])}>Здесь появится результат</span>
             </div>
+            <div className={cn(styles["nickname-form__footer"])}>
+                © ICQ LLC. 2010
+            </div>
         </div>
         
-        <div className={cn(styles["nickname-form__footer"])}>
-            © ICQ LLC. 2010
-        </div>
     </div>
   )
 }
