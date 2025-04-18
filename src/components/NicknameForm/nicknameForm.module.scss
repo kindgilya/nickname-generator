@@ -7,15 +7,15 @@
 // 585856  шрифты и обводка конпки
 .nickname-form {
     background: linear-gradient(to bottom, #7fbf4d 5%, #7fbf4d 8%, #f1f2ec 15%);
-    border-radius: 10px; // Добавим скругление углов формы
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1); // Легкая тень для объема
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   
     &__header {
       padding: 10px 15px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid rgba(88, 88, 86, 0.2); // Легкая разделительная линия
+      border-bottom: 1px solid rgba(88, 88, 86, 0.2);
     }
   
     &__collapse {
