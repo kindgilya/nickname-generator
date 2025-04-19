@@ -73,23 +73,11 @@
     }
   }
   
-  .icq-logo {
-    width: 30px;
-    height: auto;
-    object-fit: contain;
-  }
-  
-  .icq-icon {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-  }
-  
+
   .input-group {
     width: 100%;
     max-width: 250px;
-    margin: 10px 0;
-    
+
     &__title {
       font-weight: 500;
       margin-bottom: 8px;
@@ -100,7 +88,6 @@
     &__write {
       width: 100%;
       padding: 8px 12px;
-      margin-bottom: 10px;
       border: 2px solid #585856;
       border-radius: 5px;
       font-family: "Shantell Sans", cursive;
@@ -112,31 +99,5 @@
         border-color: #337931;
         box-shadow: 0 0 0 2px rgba(51, 121, 49, 0.2);
       }
-    }
-  }
-  
-  .btn {
-    width: 100%;
-    max-width: 250px;
-    height: 50px;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    color: #585856;
-    transition: all 0.3s ease;
-  }
-  
-  .btn-generate {
-    font-family: "Shantell Sans", cursive;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: #7fbf4d;
-    color: #f1f2ec;
-    border-color: #f4ffeb;
-    
-    &:hover {
-      background-color: #6daa3d;
-      border-color: #6daa3d;
-      color: #fff;
     }
   }
