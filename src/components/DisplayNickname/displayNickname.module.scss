@@ -1,0 +1,17 @@
+.display-nickname {
+    margin: 15px 0;
+    text-align: center;
+    
+    &__title {
+        font-weight: 600;
+        color: #585856;
+        margin-bottom: 5px;
+    }
+  
+    &__result {
+        font-size: 18px;
+        color: #337931;
+        font-weight: bold;
+        min-height: 24px;
+    }
+  }

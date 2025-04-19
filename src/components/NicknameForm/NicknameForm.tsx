@@ -6,9 +6,27 @@ import Image from "../Image/Image";
 import Button from "../Button/Button";
 import { generateNickname } from '../../utils/nicknameTemplates';
 import NicknameInput from '../NicknameInput/NicknameInput';
+import DisplayNickname from '../DisplayNickname/DisplayNickname';
 
 const NicknameForm = () => {
     const [name, setName] = useState('');
+    const [transformedName, setTransformedName] = useState('');
+
+    const handleSubmit = (): void => {
+        if (!name.trim()) {
+            setTransformedName('');
+            return;
+        }
+        setTransformedName(generateNickname(name));
+    }
+
+    const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const newName = e.target.value;
+        setName(newName);
+        if (!newName.trim()) {
+            setTransformedName('');
+        }
+    }
 
   return (
     <div className={cn(styles["nickname-form"])}>
@@ -25,17 +43,11 @@ const NicknameForm = () => {
         </div>
         <NicknameInput 
             label="Введите ваше имя"
-            onChange={(e) => setName(e.target.value)}
+            onChange={handleNameChange}
             placeholder="Например, Маша"
         />
-
-        <Button use="generate" handler={()=>{console.log(generateNickname(name))}}>Сгенерировать ник</Button>
-            
-        <div className={cn(styles["nickname-form__container"])}>
-            <h3 className={cn(styles["nickname-form__result-title"])}>Ваш новый ник:</h3>
-            <span className={cn(styles["nickname-form__result"])}>Здесь появится результат</span>
-        </div>
-
+        <Button use="generate" handler={handleSubmit} disabled={!name.trim()}>Сгенерировать ник</Button>
+        <DisplayNickname nickname={transformedName != "" ? transformedName : 'Здесь появится результат'}></DisplayNickname>
         <div className={cn(styles["nickname-form__footer"])}>
             © ICQ LLC. 2010
         </div>

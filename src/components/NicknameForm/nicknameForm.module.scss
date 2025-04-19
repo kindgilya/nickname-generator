@@ -1,10 +1,3 @@
-// 7fbf4d окно
-
-// 337931 обводка на ховер
-
-// f1f2ec фон
-
-// 585856  шрифты и обводка конпки
 .nickname-form {
     background: linear-gradient(to bottom, #7fbf4d 5%, #7fbf4d 8%, #f1f2ec 15%);
     border-radius: 10px;
@@ -46,25 +39,7 @@
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
-  
-    &__container {
-      margin: 15px 0;
-      text-align: center;
-    }
-  
-    &__result-title {
-      font-weight: 600;
-      color: #585856;
-      margin-bottom: 5px;
-    }
-  
-    &__result {
-      font-size: 18px;
-      color: #337931;
-      font-weight: bold;
-      min-height: 24px;
-    }
-  
+
     &__footer {
       margin-top: 20px;
       font-size: 12px;

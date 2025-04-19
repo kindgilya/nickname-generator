@@ -1,11 +1,15 @@
-import styles from "./nicknameInput.module.scss";
+import styles from "./displayNickname.module.scss";
 import cn from 'classnames';
 
-const DisplayNickname = () => {
+interface NicknameDisplayProps {
+    nickname?: string;
+  }
+
+const DisplayNickname = ({ nickname }: NicknameDisplayProps) => {
   return (
     <div className={cn(styles["display-nickname"])}>
-        <h3 className={cn(styles["display-nickname__title"])}>Ваш новый ник:</h3>
-        <span className={cn(styles["display-nickname__result"])}>Здесь появится результат</span>
+        <h3 className={cn(styles["display-nickname__title"])}>Твой крутой новый ник:</h3>
+        <span className={cn(styles["display-nickname__result"])}>{nickname}</span>
     </div>
   )
 }
