@@ -121,35 +121,22 @@
     height: 50px;
     padding: 10px 20px;
     background-color: #fff;
-    border: 2px solid #585856;
     border-radius: 5px;
-    font-family: "Shantell Sans", cursive;
-    font-size: 16px;
-    font-weight: 500;
     color: #585856;
-    cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 10px;
-    
-    &:hover {
-      border-color: #337931;
-      background-color: #f1f2ec;
-      color: #337931;
-    }
-    
-    &:active {
-      transform: scale(0.98);
-    }
   }
   
   .btn-generate {
+    font-family: "Shantell Sans", cursive;
+    font-size: 16px;
+    font-weight: 500;
     background-color: #7fbf4d;
-    color: white;
-    border-color: #7fbf4d;
+    color: #f1f2ec;
+    border-color: #f4ffeb;
     
     &:hover {
       background-color: #6daa3d;
       border-color: #6daa3d;
-      color: white;
+      color: #fff;
     }
   }

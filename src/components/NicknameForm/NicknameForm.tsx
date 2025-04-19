@@ -2,6 +2,7 @@ import { IoMdClose } from "react-icons/io";
 import styles from "./nicknameForm.module.scss";
 import cn from 'classnames';
 import Image from "../Image/Image";
+import Button from "../Button/Button";
 
 const NicknameForm = () => {
   return (
@@ -22,8 +23,8 @@ const NicknameForm = () => {
                 <label className={cn(styles["input-group__title"])} htmlFor="name">Ваше имя</label>
                 <input className={cn(styles["input-group__write"])} type="text" id="name" placeholder="Введите ваше имя"></input>
             </div>
-
-            <button className={cn(styles.btn, styles["btn-generate"])} >Сгенерировать ник</button>
+            
+            <Button use="generate" handler={()=>{}}>Сгенерировать ник</Button>
             
             <div className={cn(styles["nickname-form__container"])}>
                 <h3 className={cn(styles["nickname-form__result-title"])}>Ваш новый ник:</h3>
