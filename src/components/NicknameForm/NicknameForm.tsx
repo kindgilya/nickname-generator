@@ -31,7 +31,7 @@ const NicknameForm = () => {
   return (
     <div className={cn(styles["nickname-form"])}>
         <div className={cn(styles["nickname-form__header"])}>
-            <Image link="./public/images/ICQ_logo.svg" name="icq-logo" alternative="ICQ_logo"/>
+            <Image link="images/ICQ_logo.svg" name="icq-logo" alternative="ICQ_logo"/>
         <div className="nickname-form__wrap">
             <span className={cn(styles["nickname-form__collapse"])}>–</span>
             <IoMdClose />
@@ -39,7 +39,7 @@ const NicknameForm = () => {
         </div>
         <div className={cn(styles["nickname-form__wpapper"])}>
         <div className={cn(styles["nickname-form__icon"])}>
-            <Image link="./public/images/ICQ_icon.png" name="icq-icon" alternative="ICQ_icon"/>
+            <Image link="images/ICQ_icon.png" name="icq-icon" alternative="ICQ_icon"/>
         </div>
         <NicknameInput 
             label="Введите ваше имя"
