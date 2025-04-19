@@ -7,6 +7,8 @@ import Button from "../Button/Button";
 import { generateNickname } from '../../utils/nicknameTemplates';
 import NicknameInput from '../NicknameInput/NicknameInput';
 import DisplayNickname from '../DisplayNickname/DisplayNickname';
+import ICQLogo from '../../assets/ICQ_logo.svg';
+import ICQIcon from '../../assets/ICQ_icon.png';
 
 const NicknameForm = () => {
     const [name, setName] = useState('');
@@ -31,7 +33,7 @@ const NicknameForm = () => {
   return (
     <div className={cn(styles["nickname-form"])}>
         <div className={cn(styles["nickname-form__header"])}>
-            <Image link="images/ICQ_logo.svg" name="icq-logo" alternative="ICQ_logo"/>
+            <Image link={ICQLogo} name="icq-logo" alternative="ICQ_logo"/>
         <div className="nickname-form__wrap">
             <span className={cn(styles["nickname-form__collapse"])}>–</span>
             <IoMdClose />
@@ -39,7 +41,7 @@ const NicknameForm = () => {
         </div>
         <div className={cn(styles["nickname-form__wpapper"])}>
         <div className={cn(styles["nickname-form__icon"])}>
-            <Image link="images/ICQ_icon.png" name="icq-icon" alternative="ICQ_icon"/>
+            <Image link={ICQIcon} name="icq-icon" alternative="ICQ_icon"/>
         </div>
         <NicknameInput 
             label="Введите ваше имя"
