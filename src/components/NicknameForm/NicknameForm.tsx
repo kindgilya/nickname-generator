@@ -49,7 +49,7 @@ const NicknameForm = () => {
         <Button use="generate" handler={handleSubmit} disabled={!name.trim()}>Сгенерировать ник</Button>
         <DisplayNickname nickname={transformedName != "" ? transformedName : 'Здесь появится результат'}></DisplayNickname>
         <div className={cn(styles["nickname-form__footer"])}>
-            © ICQ LLC. 2010
+            © ICQ LLC. 20XX
         </div>
         </div>
         

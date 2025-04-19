@@ -1,11 +1,12 @@
 .display-nickname {
     margin: 15px 0;
     text-align: center;
+    padding: 5px 5px;
     
     &__title {
         font-weight: 600;
         color: #585856;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
   
     &__result {
