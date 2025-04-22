@@ -4,7 +4,7 @@ import styles from "./button.module.scss";
 interface IButtonProps {
   children: React.ReactNode,
   use: string,
-  handler: () => void,
+  handler?: () => void,
   disabled?: boolean
 }
 

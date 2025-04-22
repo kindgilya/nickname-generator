@@ -5,7 +5,7 @@ import cn from 'classnames';
 import Image from "../Image/Image";
 import Button from "../Button/Button";
 import { generateNickname } from '../../utils/nicknameTemplates';
-import NicknameInput from '../NicknameInput/NicknameInput';
+import Input from '../NicknameInput/Input';
 import DisplayNickname from '../DisplayNickname/DisplayNickname';
 import ICQLogo from '../../assets/ICQ_logo.svg';
 import ICQIcon from '../../assets/ICQ_icon.png';
@@ -14,7 +14,8 @@ const NicknameForm = () => {
     const [name, setName] = useState('');
     const [transformedName, setTransformedName] = useState('');
 
-    const handleSubmit = (): void => {
+    const handleSubmit = (e: React.FormEvent): void => {
+        e.preventDefault();
         if (!name.trim()) {
             setTransformedName('');
             return;
@@ -39,21 +40,21 @@ const NicknameForm = () => {
             <IoMdClose />
         </div>
         </div>
-        <div className={cn(styles["nickname-form__wpapper"])}>
+        <form onSubmit={handleSubmit} className={cn(styles["nickname-form__wpapper"])}>
         <div className={cn(styles["nickname-form__icon"])}>
             <Image link={ICQIcon} name="icq-icon" alternative="ICQ_icon"/>
         </div>
-        <NicknameInput 
+        <Input 
             label="Введите ваше имя"
             onChange={handleNameChange}
             placeholder="Например, Маша"
         />
-        <Button use="generate" handler={handleSubmit} disabled={!name.trim()}>Сгенерировать ник</Button>
+        <Button use="generate" disabled={!name.trim()}>Сгенерировать ник</Button>
         <DisplayNickname nickname={transformedName != "" ? transformedName : 'Здесь появится результат'}></DisplayNickname>
         <div className={cn(styles["nickname-form__footer"])}>
             © ICQ LLC. 20XX
         </div>
-        </div>
+        </form>
         
     </div>
   )
